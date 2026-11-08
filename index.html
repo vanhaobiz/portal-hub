@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trung Tâm Quản Trị Website | vanhaobiz</title>
+    <title>Trung Tâm Quản Trị Website | Lê Văn Hào (@vanhaobiz)</title>
     <style>
         :root {
             --bg: #0f172a;
             --card: #1e293b;
             --accent: #38bdf8;
-            --green: #10b981;
+            --green: #34d399;
             --text: #f8fafc;
             --muted: #94a3b8;
         }
@@ -24,7 +24,7 @@
             align-items: center;
             padding: 3rem 1.5rem;
         }
-        .container { max-width: 980px; width: 100%; }
+        .container { max-width: 1040px; width: 100%; }
         header {
             text-align: center;
             margin-bottom: 3rem;
@@ -57,12 +57,17 @@
             flex-direction: column;
             justify-content: space-between;
         }
+        .card.featured {
+            border: 2px solid var(--green);
+            background: linear-gradient(145deg, #132f2c, #1e293b);
+        }
         .card:hover {
             transform: translateY(-4px);
             border-color: var(--accent);
         }
-        .card h3 { margin-bottom: 0.5rem; color: var(--accent); font-size: 1.25rem; }
-        .card p { color: var(--muted); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.25rem; }
+        .card h3 { margin-bottom: 0.6rem; color: var(--accent); font-size: 1.25rem; }
+        .card.featured h3 { color: var(--green); }
+        .card p { color: var(--muted); font-size: 0.95rem; line-height: 1.55; margin-bottom: 1.25rem; }
         .actions { display: flex; gap: 0.6rem; flex-wrap: wrap; }
         .btn {
             display: inline-block;
@@ -73,6 +78,9 @@
             border-radius: 8px;
             font-weight: 600;
             font-size: 0.9rem;
+        }
+        .card.featured .btn-primary {
+            background: var(--green);
         }
         .btn-repo {
             background: rgba(255,255,255,0.08);
@@ -90,11 +98,21 @@
 <body>
     <div class="container">
         <header>
-            <span class="badge">⚡ Hệ Thống Quản Trị Tự Động • @vanhaobiz</span>
+            <span class="badge">⚡ Hệ Thống Quản Trị Tự Động • Lê Văn Hào (@vanhaobiz)</span>
             <h1>Trung Tâm Quản Trị & Xuất Bản Website</h1>
             <p class="subtitle">Danh sách toàn bộ các trang web của bạn được đồng bộ và xuất bản trực tiếp trên GitHub Pages.</p>
         </header>
         <div class="grid" id="site-list">
+            <div class="card featured">
+                <div>
+                    <h3>🌟 Hành Trình Hạnh Phúc – Lê Văn Hào</h3>
+                    <p>Từ đôi bàn tay thợ lành nghề đến người kỹ sư giàu kinh nghiệm xây dựng cuộc sống phồn hoa phố thị Sài Gòn, kiến trúc sư kiến tạo cuộc sống xAI, người truyền lửa phổ cập AI cho cộng đồng và Marathoner đầy cảm hứng.</p>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-primary" href="https://vanhaobiz.github.io/hanh-trinh-hanh-phuc/" target="_blank">Mở Trang Web</a>
+                    <a class="btn btn-repo" href="https://github.com/vanhaobiz/hanh-trinh-hanh-phuc" target="_blank">Mã Nguồn GitHub</a>
+                </div>
+            </div>
             <div class="card">
                 <div>
                     <h3>🌐 Trang Chủ Quản Trị (Portal Hub)</h3>
@@ -108,7 +126,7 @@
             <div class="card">
                 <div>
                     <h3>🧪 Phòng Thí Nghiệm Số (Lab)</h3>
-                    <p>Không gian thử nghiệm giao diện web, công cụ tự động hóa và các dự án công nghệ mới.</p>
+                    <p>Không gian thử nghiệm giao diện web, công cụ tự động hóa và các dự án công nghệ xAI mới.</p>
                 </div>
                 <div class="actions">
                     <a class="btn" href="https://vanhaobiz.github.io/lab/" target="_blank">Mở Trang Web</a>
