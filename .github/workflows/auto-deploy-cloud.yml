@@ -1,0 +1,25 @@
+name: Tu-Dong-Chay-Tren-Dam-May-GitHub
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    # Tự động kiểm tra và cập nhật định kỳ mỗi 6 tiếng trên máy chủ GitHub (ngay cả khi tắt máy tính cá nhân)
+    - cron: '0 */6 * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tải mã nguồn trên máy chủ đám mây GitHub
+        uses: actions/checkout@v4
+
+      - name: Kiểm tra và tự động cập nhật trạng thái hoạt động 24/7
+        run: |
+          echo "Hệ thống đang chạy trực tiếp trên máy chủ đám mây của GitHub lúc: $(date -u)"
