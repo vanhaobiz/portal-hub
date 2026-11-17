@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trung Tâm Quản Trị Website | @vanhaobiz</title>
+    <title>Trung Tâm Quản Trị Website 24/7 | vanhaobiz</title>
     <style>
         :root {
             --bg: #0f172a;
             --card: #1e293b;
             --accent: #38bdf8;
-            --green: #34d399;
+            --success: #22c55e;
             --text: #f8fafc;
             --muted: #94a3b8;
         }
@@ -24,27 +24,27 @@
             align-items: center;
             padding: 3rem 1.5rem;
         }
-        .container { max-width: 1040px; width: 100%; }
+        .container { max-width: 960px; width: 100%; }
         header {
             text-align: center;
             margin-bottom: 3rem;
         }
         .badge {
             display: inline-block;
-            background: rgba(56, 189, 248, 0.15);
-            color: var(--accent);
-            padding: 0.4rem 1rem;
+            background: rgba(34, 197, 94, 0.15);
+            color: var(--success);
+            padding: 0.45rem 1.1rem;
             border-radius: 999px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 600;
             margin-bottom: 1rem;
-            border: 1px solid rgba(56, 189, 248, 0.3);
+            border: 1px solid rgba(34, 197, 94, 0.35);
         }
-        h1 { font-size: 2.5rem; margin-bottom: 0.75rem; }
-        p.subtitle { color: var(--muted); font-size: 1.1rem; }
+        h1 { font-size: 2.4rem; margin-bottom: 0.75rem; }
+        p.subtitle { color: var(--muted); font-size: 1.1rem; line-height: 1.6; }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
         .card {
@@ -57,18 +57,13 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        .card.featured {
-            border: 2px solid var(--green);
-            background: linear-gradient(145deg, #132f2c, #1e293b);
-        }
         .card:hover {
             transform: translateY(-4px);
             border-color: var(--accent);
         }
-        .card h3 { margin-bottom: 0.6rem; color: var(--accent); font-size: 1.25rem; }
-        .card.featured h3 { color: var(--green); }
-        .card p { color: var(--muted); font-size: 0.95rem; line-height: 1.55; margin-bottom: 1.25rem; }
-        .actions { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+        .card h3 { margin-bottom: 0.6rem; color: var(--accent); }
+        .card p { color: var(--muted); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.4rem; }
+        .btn-group { display: flex; gap: 0.75rem; flex-wrap: wrap; }
         .btn {
             display: inline-block;
             text-decoration: none;
@@ -79,64 +74,50 @@
             font-weight: 600;
             font-size: 0.9rem;
         }
-        .card.featured .btn-primary {
-            background: var(--green);
-        }
-        .btn-repo {
-            background: rgba(255,255,255,0.08);
+        .btn-outline {
+            background: transparent;
             color: var(--text);
+            border: 1px solid rgba(255,255,255,0.2);
         }
-        footer {
-            margin-top: 3rem;
-            text-align: center;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
-        footer a { color: var(--accent); text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <span class="badge">⚡ Hệ Thống Quản Trị Tự Động • @vanhaobiz</span>
+            <span class="badge">🟢 Đang Chạy 24/7 Trên Đám Mây GitHub (@vanhaobiz) — Ngay Cả Khi Tắt Máy Tính</span>
             <h1>Trung Tâm Quản Trị & Xuất Bản Website</h1>
-            <p class="subtitle">Danh sách toàn bộ các trang web của bạn được đồng bộ và xuất bản trực tiếp trên GitHub Pages.</p>
+            <p class="subtitle">Hệ thống lưu trữ và vận hành trực tiếp trên máy chủ GitHub Pages & GitHub Actions. Mọi trang web tại đây hoạt động xuyên suốt 24/7 không phụ thuộc vào máy tính cá nhân của bạn.</p>
         </header>
         <div class="grid" id="site-list">
-            <div class="card featured">
-                <div>
-                    <h3>🌟 Hành Trình Hạnh Phúc</h3>
-                    <p>Từ đôi bàn tay thợ lành nghề đến người kỹ sư giàu kinh nghiệm xây dựng cuộc sống phồn hoa phố thị Sài Gòn, kiến trúc sư kiến tạo cuộc sống xAI, người truyền lửa phổ cập AI cho cộng đồng và Marathoner đầy cảm hứng.</p>
-                </div>
-                <div class="actions">
-                    <a class="btn btn-primary" href="https://vanhaobiz.github.io/hanh-trinh-hanh-phuc/" target="_blank">Mở Trang Web</a>
-                    <a class="btn btn-repo" href="https://github.com/vanhaobiz/hanh-trinh-hanh-phuc" target="_blank">Mã Nguồn GitHub</a>
-                </div>
-            </div>
             <div class="card">
                 <div>
-                    <h3>🌐 Trang Chủ Quản Trị (Portal Hub)</h3>
-                    <p>Cổng trung tâm tổng hợp toàn bộ đường dẫn các trang web của bạn để bấm mở trực tiếp một chạm.</p>
+                    <h3>🌐 1. Trang Chủ Trung Tâm (Portal Hub)</h3>
+                    <p>Cổng thông tin tổng hợp danh sách tất cả các trang web của bạn trên GitHub Pages, hoạt động 24/7.</p>
                 </div>
-                <div class="actions">
+                <div class="btn-group">
                     <a class="btn" href="https://vanhaobiz.github.io/portal-hub/" target="_blank">Mở Trang Web</a>
-                    <a class="btn btn-repo" href="https://github.com/vanhaobiz/portal-hub" target="_blank">Mã Nguồn GitHub</a>
+                    <a class="btn btn-outline" href="https://github.com/vanhaobiz/portal-hub" target="_blank">Mã Nguồn</a>
                 </div>
             </div>
             <div class="card">
                 <div>
-                    <h3>📚 Kho Bài Học Đời Mới xAI (Lab)</h3>
-                    <p>Kho tri thức tổng hợp toàn bộ 22 buổi học, triết lý Thân – Tâm – Trí cấp số nhân, 100+ sách quý, sổ tay NotebookLM và bộ câu lệnh (Prompts) & Trợ lý GEM thực chiến.</p>
+                    <h3>⚙️ 2. Hệ Thống Chạy Ngầm Đám Mây (GitHub Actions)</h3>
+                    <p>Tự động thực thi các tác vụ định kỳ trên máy chủ của GitHub ngay cả khi bạn đã tắt máy tính hoàn toàn.</p>
                 </div>
-                <div class="actions">
-                    <a class="btn" href="https://vanhaobiz.github.io/lab/" target="_blank">Mở Kho Bài Học</a>
-                    <a class="btn btn-repo" href="https://github.com/vanhaobiz/lab" target="_blank">Mã Nguồn GitHub</a>
+                <div class="btn-group">
+                    <a class="btn" href="https://github.com/vanhaobiz/portal-hub/actions" target="_blank">Xem Tiến Trình Đám Mây</a>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>📁 3. Kho Lưu Trữ Tài Khoản (@vanhaobiz)</h3>
+                    <p>Quản lý toàn bộ các dự án và trang web đã xuất bản trên tài khoản GitHub của bạn.</p>
+                </div>
+                <div class="btn-group">
+                    <a class="btn" href="https://github.com/vanhaobiz?tab=repositories" target="_blank">Danh Sách Kho Lưu Trữ</a>
                 </div>
             </div>
         </div>
-        <footer>
-            Tài khoản GitHub: <a href="https://github.com/vanhaobiz" target="_blank">github.com/vanhaobiz</a>
-        </footer>
     </div>
 </body>
 </html>
